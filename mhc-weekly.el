@@ -395,7 +395,7 @@ the window occurs."
 	    (mhc-weekly/rectangle-table-body-task day width show-hour)))
 
 (defun mhc-weekly/subject (schedule)
-  (let ((subject (mhc-schedule-subject schedule))
+  (let ((subject (or (mhc-schedule-subject schedule) "<<no subject>>"))
 	(location (mhc-schedule-location schedule))
 	(face (mhc-face-category-to-face
 	       (car (mhc-schedule-categories schedule)))))

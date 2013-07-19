@@ -412,7 +412,7 @@
 	    (mhc-monthly/rectangle-table-body-schedule day width show-hour))))
 
 (defun mhc-monthly/subject (schedule)
-  (let ((subject (mhc-schedule-subject schedule))
+  (let ((subject (or (mhc-schedule-subject schedule) "<<no subject>>"))
 	(location (mhc-schedule-location schedule))
 	(face (mhc-face-category-to-face
 	       (car (mhc-schedule-categories schedule)))))
