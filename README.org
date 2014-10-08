@@ -1,3 +1,84 @@
 * MHC-HACK
 ** mhc-monthly
+   mhc-monthly is a monthly view of MHC calendar system.
+*** keybind
+    | Key   | Comman                            | Description |
+    |-------+-----------------------------------+-------------|
+    | C-a   | mhc-weekly-beginning-of-week      |             |
+    | C-e   | mhc-weekly-end-of-week            |             |
+    | .     | mhc-weekly-goto-today             |             |
+    | <     | mhc-weekly-prev-week              |             |
+    | >     | mhc-weekly-next-week              |             |
+    | ?     | mhc-weekly-describe-schedule      |             |
+    | D     | mhc-weekly-delete                 |             |
+    | E     | mhc-weekly-edit                   |             |
+    | M     | mhc-weekly-modify                 |             |
+    | N     | mhc-weekly-next-schedule          |             |
+    | P     | mhc-weekly-prev-schedule          |             |
+    | R     | mhc-weekly-reset                  |             |
+    | ^     | mhc-weekly-enlarge-table          |             |
+    | b     | mhc-weekly-prev-day               |             |
+    | f     | mhc-weekly-next-day               |             |
+    | g     | mhc-weekly-goto-day               |             |
+    | h     | mhc-toggle-hide-private-schedules |             |
+    | m     | mhc-monthly                       |             |
+    | n     | mhc-weekly-next-line              |             |
+    | p     | mhc-weekly-prev-line              |             |
+    | q     | mhc-weekly-quit                   |             |
+    | r     | mhc-weekly-rescan                 |             |
+    | s     | mhc-weekly-scan                   |             |
+    | t     | mhc-weekly-goto-task              |             |
+    | v     | mhc-weekly-goto-view              |             |
+    |       |                                   |             |
+    | C-c ? | mhc-calendar                      |             |
+    | C-c h | mhc-toggle-hide-private-schedules |             |
+    |       |                                   |             |
+    | C-M-n | mhc-weekly-next-year              |             |
+    | C-M-p | mhc-weekly-prev-year              |             |
+    | M-<   | mhc-weekly-beginning-of-day       |             |
+    | M->   | mhc-weekly-end-of-day             |             |
+    | M-{   | mhc-weekly-prev-month             |             |
+    | M-}   | mhc-weekly-next-month             |             |
 ** mhc-weekly
+   mhc-monthly is a vertical weekly view of MHC calendar system.
+*** keybind
+    | Key   | Command                           | Description |
+    |-------+-----------------------------------+-------------|
+    | C-a   | mhc-monthly-beginning-of-week     |             |
+    | C-c   | Prefix Command                    |             |
+    | C-e   | mhc-monthly-end-of-week           |             |
+    | ESC   | Prefix Command                    |             |
+    | .     | mhc-monthly-goto-today            |             |
+    | <     | mhc-monthly-prev-month            |             |
+    | >     | mhc-monthly-next-month            |             |
+    | ?     | mhc-monthly-describe-schedule     |             |
+    | D     | mhc-monthly-delete                |             |
+    | E     | mhc-monthly-edit                  |             |
+    | M     | mhc-monthly-modify                |             |
+    | N     | mhc-monthly-next-line             |             |
+    | P     | mhc-monthly-prev-line             |             |
+    | R     | mhc-monthly-reset                 |             |
+    | ^     | mhc-monthly-enlarge-table         |             |
+    | b     | mhc-monthly-prev-day              |             |
+    | f     | mhc-monthly-next-day              |             |
+    | g     | mhc-monthly-goto-day              |             |
+    | h     | mhc-toggle-hide-private-schedules |             |
+    | j     | mhc-monthly-next-line             |             |
+    | k     | mhc-monthly-prev-line             |             |
+    | n     | mhc-monthly-next-week             |             |
+    | p     | mhc-monthly-prev-week             |             |
+    | q     | mhc-monthly-quit                  |             |
+    | r     | mhc-monthly-rescan                |             |
+    | s     | mhc-monthly-scan                  |             |
+    | v     | mhc-monthly-goto-view             |             |
+    | w     | mhc-weekly                        |             |
+    |       |                                   |             |
+    | C-c ? | mhc-calendar                      |             |
+    | C-c h | mhc-toggle-hide-private-schedules |             |
+    |       |                                   |             |
+    | C-M-n | mhc-monthly-next-year             |             |
+    | C-M-p | mhc-monthly-prev-year             |             |
+    | M-<   | mhc-monthly-beginning-of-month    |             |
+    | M->   | mhc-monthly-end-of-month          |             |
+    | M-{   | mhc-monthly-prev-month            |             |
+    | M-}   | mhc-monthly-next-month            |             |
