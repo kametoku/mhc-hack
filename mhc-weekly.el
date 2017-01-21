@@ -887,10 +887,11 @@ the window occurs."
 	(recenter 0)
 	(goto-char pos))))
 
-(defun mhc-weekly-reset ()
-  (interactive)
+(defun mhc-weekly-reset (&optional update-widths)
+  (interactive "P")
   (mhc-reset)
-  (setq mhc-weekly-day-widths-cache nil)
+  (if update-widths
+      (setq mhc-weekly-day-widths-cache nil))
   (mhc-weekly-rescan)
   (mhc-weekly-describe-schedule))
 
