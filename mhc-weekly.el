@@ -13,6 +13,10 @@
 (eval-when-compile
   (require 'cl))
 
+;; for new MHC.
+(if (fboundp 'mhc-summary-current-date)
+    (defalias 'mhc-current-date 'mhc-summary-current-date))
+
 ;;; Configration Variables:
 
 (defcustom mhc-weekly-start-day-of-week 1
@@ -675,6 +679,8 @@ the window occurs."
   (setq mode-name "mhc-weekly")
   (setq indent-tabs-mode nil)
   (setq truncate-lines t)
+  (require 'mhc-face)
+  (mhc-face-setup)
 ;;   (when (featurep 'xemacs)
 ;;     (easy-menu-add mhc-weekly-mode-menu))
   (run-hooks 'mhc-weekly-mode-hook))

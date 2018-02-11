@@ -691,6 +691,8 @@
   (setq mode-name "mhc-monthly")
   (setq indent-tabs-mode nil)
   (setq truncate-lines t)
+  (require 'mhc-face)
+  (mhc-face-setup)
 ;;   (when (featurep 'xemacs)
 ;;     (easy-menu-add mhc-monthly-mode-menu))
   (run-hooks 'mhc-monthly-mode-hook))
