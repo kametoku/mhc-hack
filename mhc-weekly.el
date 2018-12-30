@@ -941,9 +941,6 @@ the window occurs."
 	  (message "No schedule on cursor.")
 	(message "")))))
 
-(defun mch-weekly/schedule
-  (get-text-property (point) 'mhc-weekly/schedule-prop))
-
 (defadvice mhc-current-date (after recognize-mhc-weekly-buffer activate)
   (if (and (not ad-return-value)
 	   (eq major-mode 'mhc-weekly-mode))
@@ -992,7 +989,7 @@ the window occurs."
 	(progn
 	  (view-file-other-window filename)
 	  (mhc-calendar/view-file-decode-header)
-	  (set-visited-file-name nil)
+;; 	  (set-visited-file-name nil)
 	  (set-buffer-modified-p nil)
 	  (setq buffer-read-only t)
 ;; 	  (re-search-forward "^$" nil t))
